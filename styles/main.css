@@ -1,15 +1,170 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import './reset.css';
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+/*Estilando el header*/
+header{
+  width: 100%;
+  height: 600px;
+  background-image: url('../img/hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  position: relative;
+} 
+header > h1 {
+  text-align: center;
+  color: var(--colorBlanco);
+  font-size: 3em;
+}
+header > span {
+  position: absolute;
+  bottom: 5%;
+  left: 30px;
+  color: var(--colorBlanco);
+  font-weight: bold;
+  font-size: 2.5em;
+  background-color: var(--colorAzulRGBA);
+  padding: 10px;
+  border-radius: 5px;
+}
+/*Estilando about me*/
+section.aboutMe{
+  background-color: var(--colorCelesteClaro);
+  width: inherit;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+section.aboutMe h2 {
+  font-size: 36px;
+  color: var(--colorBlanco);
+  text-align: center;
+}
+section.aboutMe > article{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+}
+section.aboutMe > article > p{
+  color: var(--colorBlanco);
+  margin: 15px auto;
+}
+section.aboutMe > article > a{
+  background-color: var(--colorRosadoClaro);
+  color: var(--colorBlanco);
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 18px 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 22px;
+}
+/*section skills*/
+section.mySkills{
+  width: inherit;
+  height: 40vh;
+  background-color: var(--colorPurpura);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+section.mySkills h2 {
+  font-size: 36px;
+  color: var(--colorBlanco);
+  text-align: center;
+}
+section.mySkills > .contentSkills{
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+section.mySkills > .contentSkills > .skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
+  margin-right: 30px;
+}
+section.mySkills > .contentSkills > .skills > span {
+  font-family: Helvetica;
+  color: var(--colorBlanco);
+  font-size: 18px;
+}
+/*barras de skills*/
+.contentBar{
+  width: 100%;
+  height: 20px;
+  background-color: var(--colorBlanco);
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.bar{
+  width: 50%;
+  height: 100%;
+  background-color: var(--coloTurquesClaro);
+  border-radius: 10px;
+}
+/*Seccion portfolio*/
+section.myPortfolio{
+  width: inherit;
+  height: 425px;
+  background-color: var(--coloAmarillo);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+section.myPortfolio h2 {
+  font-size: 36px;
+  color: var(--colorBlanco);
+  text-align: center;
+}
+section.myPortfolio > .containerPorfolio{
+  display: grid;
+  grid-template-rows: repeat(2, 100px);
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  grid-gap: 10px;
+  padding: 10px;
+}
+  .item{
+    border: 1px solid;
+  }
+/*seccion cliente*/
+section.myClients{
+  width: inherit;
+  height: 40vh;
+  background-color: var(-coloGrisAzulino);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+section.myClients h2 {
+  font-size: 36px;
+  color: var(--colorBlanco);
+  text-align: center;
+}
+section.myClients > .contentClients{
+  width: inherit;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+section.myClients > .contentClients > img {
+  width: 20%;
+  height: 120px;
+}
 /*SECCION DE CONTACTO*/
-
 section.contactMe{
-  background-color: #1687A0;
+  background-color: var(--colorGrisAzul);
   width: inherit;
   height: auto;
   display: flex;
@@ -18,7 +173,7 @@ section.contactMe{
 }
 section.contactMe h2 {
   font-size: 36px;
-  color: #ffffff;
+  color: var(--colorBlanco);
   text-align: center;
   margin: 27px 0;
 }
@@ -53,8 +208,8 @@ section.contactMe > form > div > textarea{
 }
 section.contactMe > form button{
   border: 0;
-  background-color: #233451;
-  color: #fff;
+  background-color: var(--colorAzulOscuro);
+  color: var(--colorBlanco);
   cursor: pointer;
   width: 16%;
   height: 60px;

@@ -1,3 +1,16 @@
+:root {
+  --colorBlanco: #ffffff;
+  --colorAzulRGBA: rgba(114, 153, 254, 0.5);
+  --colorCelesteClaro: #7299FE;
+  --colorRosadoClaro: #D16FFF;
+  --colorPurpura: #9122FF;
+  --coloTurquesClaro: #57EFF9;
+  --coloAmarillo: #FFD233;
+  --coloGrisAzulino:#3F4E62;
+  --colorGrisAzul: #1687A0;
+  --colorAzulOscuro: #233451;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -11,16 +24,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-p,h1,h2,h3,h4,h5,h6 {padding: 0; margin: 0;}
-:root {
-  --colorBlanco: #ffffff;
-  --colorAzulRGBA: rgba(114, 153, 254, 0.5);
-  --colorCelesteClaro: #7299FE;
-  --colorRosadoClaro: #D16FFF;
-  --colorPurpura: #9122FF;
-  --coloTurquesClaro: #57EFF9;
-  --coloAmarillo: #FFD233;
-  --coloGrisAzulino:#3F4E62;
-  --colorGrisAzul: #1687A0;
-  --colorAzulOscuro: #233451;
+p,h1,h2,h3,h4,h5,h6 {
+  padding: 0; 
+  margin: 0;
 }

@@ -1,5 +1,21 @@
 * {
   padding: 0;
   margin: 0;
+  list-style: none;
+	text-decoration: none;
+	outline: none;
   box-sizing: border-box;
+}
+
+:root {
+  --colorBlanco: #ffffff;
+  --colorAzulRGBA: rgba(114, 153, 254, 0.5);
+  --colorCelesteClaro: #7299FE;
+  --colorRosadoClaro: #D16FFF;
+  --colorPurpura: #9122FF;
+  --coloTurquesClaro: #57EFF9;
+  --coloAmarillo: #FFD233;
+  --coloGrisAzulino:#3F4E62;
+  --colorGrisAzul: #1687A0;
+  --colorAzulOscuro: #233451;
 }

@@ -19,6 +19,10 @@ form div {
   margin-bottom: 1em;
 }
 
+form div:last-child {
+  border-bottom: 0;
+}
+
 form input[type="text"],
 input[type="number"],
 input[type="password"],
@@ -43,6 +47,7 @@ input[type="email"]:invalid:focus {
   background-color: rgba(192, 7, 7, 0.2);
   border: 1px solid rgb(192, 7, 7);
 }
+
 form div:nth-child(5) label:nth-child(2), label:nth-child(4){
   font-size: 13px;
   font-weight: 300;

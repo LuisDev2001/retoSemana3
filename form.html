@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/main.css">
+  <title>Form</title>
+</head>
+  <body>
+    <form action="#" method="POST">
+      <h1>Ingresa tus datos personales</h1>
+      <div>
+        <label for="nombre">*Nombre</label>
+        <input type="text" placeholder="Ejm. Luis Aldair" pattern="[A-Z a-z]+" required>
+      </div>
+      <div>
+        <label for="apellido"><b>*</b>Apellidos:</label>
+        <input type="text" id="apellido" placeholder="Ej. Quispe" pattern="[A-Z a-z]+" required>
+      </div>
+      <div>
+        <label for="edad"><b>*</b>Edad:</label>
+        <input type="number" id="edad" placeholder="Ej. 20" min="18" max="80" required>
+      </div>
+      <div>
+        <label><b>*</b>Sexo:</label>
+        <label>Masculino</label>
+        <input type="radio" name="genero">
+        <label>Femenino</label>
+        <input type="radio" name="genero">
+      </div>
+      <div>
+        <label for="dni">*DNI:</label>
+        <input type="text" id="dni" pattern="[A-Za-z0-9]+" minlength="8" required>
+      </div>
+      <div>
+        <label for="email"><b>*</b>Email:</label>
+        <input type="email" id="email" placeholder="Ej. mail@mail.com" required>
+      </div>
+      <div>
+        <button>Enviar</button>
+      </div>
+    </form>
+  </body>
+</html>

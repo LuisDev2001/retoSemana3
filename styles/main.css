@@ -20,7 +20,7 @@ form div {
 }
 
 form div:last-child {
-  border-bottom: 0;
+  margin-bottom: 0;
 }
 
 form input[type="text"],
